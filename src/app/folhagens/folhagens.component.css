@@ -1,0 +1,4 @@
+#fundo3 {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../../assets/background-plantas-3.jpg);
+    background-position: center
+}

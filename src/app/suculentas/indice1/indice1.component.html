@@ -1,0 +1,340 @@
+<nav>
+    <h2>Índice por gênero</h2>
+    <ul>
+        <h3>
+            <li *ngFor="let genero of adromischus">
+                <a id="categoria"> {{ genero.nomeGenero }} </a>
+
+                <ul id="especie">
+                    <li *ngFor="let especie of genero.especies">
+                        <a> {{ especie.especie }} </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li *ngFor="let genero of aeonium">
+                <a id="categoria"> {{ genero.nomeGenero }} </a>
+
+                <ul id="especie">
+                    <li *ngFor="let especie of genero.especies">
+                        <a> {{ especie.especie }} </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li *ngFor="let genero of aloe">
+                <a id="categoria"> {{ genero.nomeGenero }} </a>
+
+                <ul id="especie">
+                    <li *ngFor="let especie of genero.especies">
+                        <a> {{ especie.especie }} </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li *ngFor="let genero of begonia">
+                <a id="categoria"> {{ genero.nomeGenero }} </a>
+
+                <ul id="especie">
+                    <li *ngFor="let especie of genero.especies">
+                        <a> {{ especie.especie }} </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li *ngFor="let genero of callisia">
+                <a id="categoria"> {{ genero.nomeGenero }} </a>
+
+                <ul id="especie">
+                    <li *ngFor="let especie of genero.especies">
+                        <a> {{ especie.especie }} </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li *ngFor="let genero of ceropegia">
+                <a id="categoria"> {{ genero.nomeGenero }} </a>
+
+                <ul id="especie">
+                    <li *ngFor="let especie of genero.especies">
+                        <a> {{ especie.especie }} </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li *ngFor="let genero of cotyledon">
+                <a id="categoria"> {{ genero.nomeGenero }} </a>
+
+                <ul id="especie">
+                    <li *ngFor="let especie of genero.especies">
+                        <a> {{ especie.especie }} </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li *ngFor="let genero of corpuscularia">
+                <a id="categoria"> {{ genero.nomeGenero }} </a>
+
+                <ul id="especie">
+                    <li *ngFor="let especie of genero.especies">
+                        <a> {{ especie.especie }} </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li *ngFor="let genero of crassula">
+                <a id="categoria"> {{ genero.nomeGenero }}
+                </a>
+
+                <ul id="especie">
+                    <li *ngFor="let especie of genero.especies">
+                        <a> {{ especie.especie }} </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li *ngFor="let genero of dracaena">
+                <a id="categoria"> {{ genero.nomeGenero }}
+                </a>
+
+                <ul id="especie">
+                    <li *ngFor="let especie of genero.especies">
+                        <a> {{ especie.especie }} </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li *ngFor="let genero of echeveria">
+                <a id="categoria"> {{ genero.nomeGenero }}
+                </a>
+
+                <ul id="especie">
+                    <li *ngFor="let especie of genero.especies">
+                        <div *ngIf="especie.cor"> 
+                            <div *ngFor="let cor of especie.cor">
+                        <a> Echeveria {{ especie.especie }} - {{cor.cor}} </a>
+                    </div>
+                     </div>
+                        <div *ngIf="!especie.cor">
+                            <a> Echeveria {{especie.especie}}</a>
+                        </div>                         
+                    </li>
+                </ul>
+            </li>
+
+            <li *ngFor="let genero of graptopetalum">
+                <a id="categoria"> {{ genero.nomeGenero }} </a>
+
+                <ul id="especie">
+                    <li *ngFor="let especie of genero.especies">
+                        <a> {{ especie.especie }} </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li *ngFor="let genero of haworthia">
+                <a id="categoria"> {{ genero.nomeGenero }} </a>
+
+                <ul id="especie">
+                    <li *ngFor="let especie of genero.especies">
+                        <a> {{ especie.especie }} </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li *ngFor="let genero of haworthiopsis">
+                <a id="categoria"> {{ genero.nomeGenero }} </a>
+
+                <ul id="especie">
+                    <li *ngFor="let especie of genero.especies">
+                        <a> {{ especie.especie }} </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li *ngFor="let genero of kalanchoe">
+                <a id="categoria"> {{ genero.nomeGenero }} </a>
+
+                <ul id="especie">
+                    <li *ngFor="let especie of genero.especies">
+                        <a> {{ especie.especie }} </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li *ngFor="let genero of monanthes">
+                <a id="categoria"> {{ genero.nomeGenero }} </a>
+
+                <ul id="especie">
+                    <li *ngFor="let especie of genero.especies">
+                        <a> {{ especie.especie }} </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li *ngFor="let genero of opuntia">
+                <a id="categoria"> {{ genero.nomeGenero }} </a>
+
+                <ul id="especie">
+                    <li *ngFor="let especie of genero.especies">
+                        <a> {{ especie.especie }} </a>
+                        <ul *ngFor="let cor of especie.cor">
+                            <li>
+                                <a> {{ cor.cor }} </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+            <li *ngFor="let genero of othonna">
+                <a id="categoria"> {{ genero.nomeGenero }} </a>
+
+                <ul id="especie">
+                    <li *ngFor="let especie of genero.especies">
+                        <a> {{ especie.especie }} </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li *ngFor="let genero of pachyphytum">
+                <a id="categoria"> {{ genero.nomeGenero }} </a>
+
+                <ul id="especie">
+                    <li *ngFor="let especie of genero.especies">
+                        <a> {{ especie.especie }} </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li *ngFor="let genero of peperomia">
+                <a id="categoria"> {{ genero.nomeGenero }} </a>
+
+                <ul id="especie">
+                    <li *ngFor="let especie of genero.especies">
+                        <a> {{ especie.especie }} </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li *ngFor="let genero of plectranthus">
+                <a id="categoria"> {{ genero.nomeGenero }} </a>
+
+                <ul id="especie">
+                    <li *ngFor="let especie of genero.especies">
+                        <a> {{ especie.especie }} </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li *ngFor="let genero of portulacaria">
+                <a id="categoria"> {{ genero.nomeGenero }} </a>
+
+                <ul id="especie">
+                    <li *ngFor="let especie of genero.especies">
+                        <a> {{ especie.especie }} </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li *ngFor="let genero of rhipsalis">
+                <a id="categoria"> {{ genero.nomeGenero }} </a>
+
+                <ul id="especie">
+                    <li *ngFor="let especie of genero.especies">
+                        <a> {{ especie.especie }} </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li *ngFor="let genero of sansevieria">
+                <a id="categoria"> {{ genero.nomeGenero }} </a>
+
+                <ul id="especie">
+                    <li *ngFor="let especie of genero.especies">
+                        <a> {{ especie.especie }} </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li *ngFor="let genero of schlumbergera">
+                <a id="categoria"> {{ genero.nomeGenero }} </a>
+
+                <ul id="especie">
+                    <li *ngFor="let especie of genero.especies">
+                        <a> {{ especie.especie }} </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li *ngFor="let genero of scilla">
+                <a id="categoria"> {{ genero.nomeGenero }} </a>
+
+                <ul id="especie">
+                    <li *ngFor="let especie of genero.especies">
+                        <a> {{ especie.especie }} </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li *ngFor="let genero of sedum">
+                <a id="categoria"> {{ genero.nomeGenero }} </a>
+
+                <ul id="especie">
+                    <li *ngFor="let especie of genero.especies">
+                        <a> {{ especie.especie }} </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li *ngFor="let genero of senecio">
+                <a id="categoria"> {{ genero.nomeGenero }} </a>
+
+                <ul id="especie">
+                    <li *ngFor="let especie of genero.especies">
+                        <a> {{ especie.especie }} </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li *ngFor="let genero of sinocrassula">
+                <a id="categoria"> {{ genero.nomeGenero }} </a>
+
+                <ul id="especie">
+                    <li *ngFor="let especie of genero.especies">
+                        <a> {{ especie.especie }} </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li *ngFor="let genero of stapelia">
+                <a id="categoria"> {{ genero.nomeGenero }} </a>
+
+                <ul id="especie">
+                    <li *ngFor="let especie of genero.especies">
+                        <a> {{ especie.especie }} </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li *ngFor="let genero of tradescantia">
+                <a id="categoria"> {{ genero.nomeGenero }} </a>
+
+                <ul id="especie">
+                    <li *ngFor="let especie of genero.especies">
+                        <a> {{ especie.especie}} </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li *ngFor="let genero of zamioculca">
+                <a id="categoria"> {{ genero.nomeGenero }} </a>
+
+                <ul id="especie">
+                    <li *ngFor="let especie of genero.especies">
+                        <a> {{ especie.especie }} </a>
+                    </li>
+                </ul>
+            </li>
+        </h3>
+    </ul>
+</nav>

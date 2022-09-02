@@ -1,0 +1,24 @@
+<nav>
+    <h2>Índice por local</h2>
+    <ul>
+        <h3 id="categoria"> Plantas do banheiro
+            <ul id="especie">
+                <li *ngFor="let especie of banheiro">
+                    <a>{{ especie.especie }}</a>
+                </li>
+            </ul>
+            Plantas de interior
+            <ul id="especie">
+                <li *ngFor="let especie of interior">
+                    <a> {{ especie.especie }} </a>
+                </li>
+            </ul>
+            Hortaliças e plantas de exterior
+            <ul id="especie">
+                <li *ngFor="let especie of exterior">
+                    <a> {{ especie.especie }} </a>
+                </li>
+            </ul>
+        </h3>
+    </ul>
+</nav>

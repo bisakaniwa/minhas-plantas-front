@@ -1,0 +1,30 @@
+html {
+    color: black;
+}
+
+.navegacao {
+    color: rgb(8, 44, 44);
+    font-weight: bold;
+    font-size: xx-large;
+    font-family: 'AmaticSC', sans-serif;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: 2px solid gray;
+    padding-bottom: 0.25%;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.788), rgba(255, 255, 180, 0.56)), url(../assets/background-nav.jpg);
+    background-position: center;
+    background-repeat: repeat-x;
+    background-size: contain;
+}
+
+button {
+    margin-left: -3.5%;
+}
+
+.margin-top {
+    margin-top: 0.4%;
+    font-family: 'Song', sans-serif;
+    font-weight: bold;
+    border-radius: 4px;
+}

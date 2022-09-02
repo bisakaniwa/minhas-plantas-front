@@ -1,0 +1,15 @@
+.fundo {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../../assets/background-sem-id.png);
+    background-position: center;
+    background-size: contain;
+    background-attachment: fixed;
+    margin: 0
+}
+
+article {
+    padding-top: 4%;
+}
+
+body {
+    color: black
+}

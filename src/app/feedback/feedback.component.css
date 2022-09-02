@@ -1,0 +1,10 @@
+.feedback {
+   font-family: 'Grotesque', sans-serif;
+   font-size: 1.6rem;
+   text-align: end;
+   padding-bottom: 4%;
+}
+
+textarea {
+   border-radius: 6px;
+}
